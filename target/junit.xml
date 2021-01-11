@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="10" time="1.305482">
+    <testcase classname="Book Library" name="Student Get" time="0.80297">
+        <system-out>
+            <![CDATA[Given I do a search http://localhost:8080 in the book library for students..passed
+Then the client receives response status code of 200........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student Post - sucess" time="0.245054">
+        <system-out>
+            <![CDATA[When I create a new student http://localhost:8080...........................passed
+And I fill in the following information Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, teste@gmail.com, Bianca Jaqueline, 27.passed
+Then I'll send the request..................................................passed
+Then the client receives response status code of 201........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student Post - error" time="0.046719">
+        <system-out>
+            <![CDATA[When I create a new student http://localhost:8080...........................passed
+And fill in the information with cpf already registered Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, 09705066619, teste@gmail.com, Bianca Jaqueline, 27.passed
+Then I'll send the request..................................................passed
+Then the client receives response status code of 400........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student Post - error 2" time="0.032172">
+        <system-out>
+            <![CDATA[When I create a new student http://localhost:8080...........................passed
+And fill in the information with cpf already registered , , , 00000, teste@gmail.com, , 27.passed
+Then I'll send the request..................................................passed
+Then the client receives response status code of 400........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student Post - error 3" time="0.022782">
+        <system-out>
+            <![CDATA[When I create a new student http://localhost:8080...........................passed
+And fill in the information with cpf already registered , , , , , Bianca Jaqueline, 27.passed
+Then I'll send the request..................................................passed
+Then the client receives response status code of 400........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student Post - error 4" time="0.024409">
+        <system-out>
+            <![CDATA[When I create a new student http://localhost:8080...........................passed
+And fill in the information with cpf already registered Leonardo Molinari, Testes de software, , , teste@gmail.com, Bianca Jaqueline, 1.passed
+Then I'll send the request..................................................passed
+Then the client receives response status code of 400........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student GET CPF" time="0.051992">
+        <system-out>
+            <![CDATA[Given that I do a http://localhost:8080 search for students 09705066619.....passed
+Then the client receives response status code of 200........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student GET CPF 2" time="0.027307">
+        <system-out>
+            <![CDATA[Given that I do a http://localhost:8080 search for students 09705066611.....passed
+Then the client receives response status code of 500........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="Student GET CPF 3" time="0.019364">
+        <system-out>
+            <![CDATA[Given that I do a http://localhost:8080 search for students xxxxxxxxxxx.....passed
+Then the client receives response status code of 500........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Book Library" name="student Update" time="0.032713">
+        <system-out>
+            <![CDATA[When I Update student http://localhost:8080.................................passed
+And I fill in Update information teste@gmail.com, Bianca Jaqueline..........passed
+Then I'll send the request Update 09705066618...............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

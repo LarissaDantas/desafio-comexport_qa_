@@ -1,0 +1,893 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-11T04:49:58.173Z",
+        "before": [
+          {
+            "result": {
+              "duration": 640472800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Student Get",
+        "description": "",
+        "id": "book-library;student-get",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 81867400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I do a search http://localhost:8080 in the book library for students",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 14
+                }
+              ],
+              "location": "GetHealthStep.IDoASearchInTheBookLibraryForStudents(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12837200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client receives response status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:58.978Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4906200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Student Post - sucess",
+        "description": "",
+        "id": "book-library;student-post---sucess;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 410300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I create a new student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 23
+                }
+              ],
+              "location": "GetHealthStep.iCreateANewStudentHttpLocalhost(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13973200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill in the following information Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, teste@gmail.com, Bianca Jaqueline, 27",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leonardo Molinari",
+                  "offset": 36
+                },
+                {
+                  "val": "Testes de software",
+                  "offset": 55
+                },
+                {
+                  "val": "Produzindo sistemas melhores e mais confiáveis",
+                  "offset": 75
+                },
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 123
+                },
+                {
+                  "val": "Bianca Jaqueline",
+                  "offset": 140
+                },
+                {
+                  "val": "27",
+                  "offset": 158
+                }
+              ],
+              "location": "GetHealthStep.iFillInTheFollowingInformationAuthorNameTitleCpfEmailNameYears(String,String,String,String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212185100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I\u0027ll send the request",
+            "match": {
+              "location": "GetHealthStep.iLlSendTheRequest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1195800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the client receives response status code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4780800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Student Post - error",
+        "description": "",
+        "id": "book-library;student-post---error;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 367600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I create a new student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 23
+                }
+              ],
+              "location": "GetHealthStep.iCreateANewStudentHttpLocalhost(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 410500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fill in the information with cpf already registered Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, 09705066619, teste@gmail.com, Bianca Jaqueline, 27",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leonardo Molinari",
+                  "offset": 52
+                },
+                {
+                  "val": "Testes de software",
+                  "offset": 71
+                },
+                {
+                  "val": "Produzindo sistemas melhores e mais confiáveis",
+                  "offset": 91
+                },
+                {
+                  "val": "09705066619",
+                  "offset": 139
+                },
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 152
+                },
+                {
+                  "val": "Bianca Jaqueline",
+                  "offset": 169
+                },
+                {
+                  "val": "27",
+                  "offset": 187
+                }
+              ],
+              "location": "GetHealthStep.iFillInTheFollowingInformationAuthorNameTitleCpfEmailNameYears(String,String,String,String,String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29416300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I\u0027ll send the request",
+            "match": {
+              "location": "GetHealthStep.iLlSendTheRequest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 597100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the client receives response status code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.263Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4923100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Student Post - error",
+        "description": "",
+        "id": "book-library;student-post---error;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 405900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I create a new student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 23
+                }
+              ],
+              "location": "GetHealthStep.iCreateANewStudentHttpLocalhost(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fill in the information with cpf already registered , , , 00000, teste@gmail.com, , 27",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 52
+                },
+                {
+                  "val": "",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 56
+                },
+                {
+                  "val": "00000",
+                  "offset": 58
+                },
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 65
+                },
+                {
+                  "val": "",
+                  "offset": 82
+                },
+                {
+                  "val": "27",
+                  "offset": 84
+                }
+              ],
+              "location": "GetHealthStep.iFillInTheFollowingInformationAuthorNameTitleCpfEmailNameYears(String,String,String,String,String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20807500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I\u0027ll send the request",
+            "match": {
+              "location": "GetHealthStep.iLlSendTheRequest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 797900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the client receives response status code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.301Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3815700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Student Post - error",
+        "description": "",
+        "id": "book-library;student-post---error;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 402200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I create a new student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 23
+                }
+              ],
+              "location": "GetHealthStep.iCreateANewStudentHttpLocalhost(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 297100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fill in the information with cpf already registered , , , , , Bianca Jaqueline, 27",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 52
+                },
+                {
+                  "val": "",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 56
+                },
+                {
+                  "val": "",
+                  "offset": 58
+                },
+                {
+                  "val": "",
+                  "offset": 60
+                },
+                {
+                  "val": "Bianca Jaqueline",
+                  "offset": 62
+                },
+                {
+                  "val": "27",
+                  "offset": 80
+                }
+              ],
+              "location": "GetHealthStep.iFillInTheFollowingInformationAuthorNameTitleCpfEmailNameYears(String,String,String,String,String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14534300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I\u0027ll send the request",
+            "match": {
+              "location": "GetHealthStep.iLlSendTheRequest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 606200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the client receives response status code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.332Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3712000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Student Post - error",
+        "description": "",
+        "id": "book-library;student-post---error;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 381700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I create a new student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 23
+                }
+              ],
+              "location": "GetHealthStep.iCreateANewStudentHttpLocalhost(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 389700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fill in the information with cpf already registered Leonardo Molinari, Testes de software, , , teste@gmail.com, Bianca Jaqueline, 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leonardo Molinari",
+                  "offset": 52
+                },
+                {
+                  "val": "Testes de software",
+                  "offset": 71
+                },
+                {
+                  "val": "",
+                  "offset": 91
+                },
+                {
+                  "val": "",
+                  "offset": 93
+                },
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 95
+                },
+                {
+                  "val": "Bianca Jaqueline",
+                  "offset": 112
+                },
+                {
+                  "val": "1",
+                  "offset": 130
+                }
+              ],
+              "location": "GetHealthStep.iFillInTheFollowingInformationAuthorNameTitleCpfEmailNameYears(String,String,String,String,String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16015700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I\u0027ll send the request",
+            "match": {
+              "location": "GetHealthStep.iLlSendTheRequest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 555700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the client receives response status code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.348Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4520200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Student GET CPF",
+        "description": "",
+        "id": "book-library;student-get-cpf;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39961800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "that I do a http://localhost:8080 search for students 09705066619",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 12
+                },
+                {
+                  "val": "09705066619",
+                  "offset": 54
+                }
+              ],
+              "location": "GetHealthStep.thatIDoAHttpLocalhostSearchForStudentsCpf(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1245800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the client receives response status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.413Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6243900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Student GET CPF",
+        "description": "",
+        "id": "book-library;student-get-cpf;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14149000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "that I do a http://localhost:8080 search for students 09705066611",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 12
+                },
+                {
+                  "val": "09705066611",
+                  "offset": 54
+                }
+              ],
+              "location": "GetHealthStep.thatIDoAHttpLocalhostSearchForStudentsCpf(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 991900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the client receives response status code of 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.442Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3977400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Student GET CPF",
+        "description": "",
+        "id": "book-library;student-get-cpf;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11803300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "that I do a http://localhost:8080 search for students xxxxxxxxxxx",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 12
+                },
+                {
+                  "val": "xxxxxxxxxxx",
+                  "offset": 54
+                }
+              ],
+              "location": "GetHealthStep.thatIDoAHttpLocalhostSearchForStudentsCpf(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 840100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the client receives response status code of 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.theClientReceivesResponseStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-11T04:49:59.462Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8171200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GetHealthStep.before()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "student Update",
+        "description": "",
+        "id": "book-library;student-update;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 787600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I Update student http://localhost:8080",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 17
+                }
+              ],
+              "location": "GetHealthStep.iUpdateStudentHttpLocalhostCpf(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 485400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I fill in Update information teste@gmail.com, Bianca Jaqueline",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste@gmail.com",
+                  "offset": 29
+                },
+                {
+                  "val": "Bianca Jaqueline",
+                  "offset": 46
+                }
+              ],
+              "location": "GetHealthStep.iFillInUpdateInformationEmailName(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18183000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I\u0027ll send the request Update 09705066618",
+            "match": {
+              "arguments": [
+                {
+                  "val": "09705066618",
+                  "offset": 29
+                }
+              ],
+              "location": "GetHealthStep.iLlSendTheRequestUpdateCpf(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Book Library",
+    "description": "",
+    "id": "book-library",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber/bookLibrary.feature",
+    "tags": []
+  }
+]

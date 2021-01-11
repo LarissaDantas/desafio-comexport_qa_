@@ -1,0 +1,338 @@
+[
+  {
+    "source": "I do a search (.*) in the book library for students",
+    "steps": [
+      {
+        "name": "I do a search http://localhost:8080 in the book library for students",
+        "aggregatedDurations": {
+          "median": 0.0818674,
+          "average": 0.081867400
+        },
+        "durations": [
+          {
+            "duration": 0.0818674,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the client receives response status code of (.*)",
+    "steps": [
+      {
+        "name": "the client receives response status code of 200",
+        "aggregatedDurations": {
+          "median": 0.007041500,
+          "average": 0.007041500
+        },
+        "durations": [
+          {
+            "duration": 0.0128372,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:8"
+          },
+          {
+            "duration": 0.0012458,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "the client receives response status code of 201",
+        "aggregatedDurations": {
+          "median": 0.0011958,
+          "average": 0.001195800
+        },
+        "durations": [
+          {
+            "duration": 0.0011958,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "the client receives response status code of 400",
+        "aggregatedDurations": {
+          "median": 0.000601650,
+          "average": 0.000639225
+        },
+        "durations": [
+          {
+            "duration": 0.0005971,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:24"
+          },
+          {
+            "duration": 0.0007979,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:24"
+          },
+          {
+            "duration": 0.0006062,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:24"
+          },
+          {
+            "duration": 0.0005557,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "the client receives response status code of 500",
+        "aggregatedDurations": {
+          "median": 0.000916000,
+          "average": 0.000916000
+        },
+        "durations": [
+          {
+            "duration": 0.0009919,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:35"
+          },
+          {
+            "duration": 0.0008401,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I create a new student (.*)",
+    "steps": [
+      {
+        "name": "I create a new student http://localhost:8080",
+        "aggregatedDurations": {
+          "median": 0.0004022,
+          "average": 0.000393540
+        },
+        "durations": [
+          {
+            "duration": 0.0004103,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:11"
+          },
+          {
+            "duration": 0.0003676,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:21"
+          },
+          {
+            "duration": 0.0004059,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:21"
+          },
+          {
+            "duration": 0.0004022,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:21"
+          },
+          {
+            "duration": 0.0003817,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I fill in the following information (.*), (.*), (.*), (.*), (.*), (.*)",
+    "steps": [
+      {
+        "name": "I fill in the following information Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, teste@gmail.com, Bianca Jaqueline, 27",
+        "aggregatedDurations": {
+          "median": 0.0139732,
+          "average": 0.013973200
+        },
+        "durations": [
+          {
+            "duration": 0.0139732,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I\u0027ll send the request",
+    "steps": [
+      {
+        "name": "I\u0027ll send the request",
+        "aggregatedDurations": {
+          "median": 0.0208075,
+          "average": 0.058591780
+        },
+        "durations": [
+          {
+            "duration": 0.2121851,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:13"
+          },
+          {
+            "duration": 0.0294163,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:23"
+          },
+          {
+            "duration": 0.0208075,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:23"
+          },
+          {
+            "duration": 0.0145343,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:23"
+          },
+          {
+            "duration": 0.0160157,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "fill in the information with cpf already registered (.*), (.*), (.*), (.*), (.*), (.*), (.*)",
+    "steps": [
+      {
+        "name": "fill in the information with cpf already registered Leonardo Molinari, Testes de software, Produzindo sistemas melhores e mais confiáveis, 09705066619, teste@gmail.com, Bianca Jaqueline, 27",
+        "aggregatedDurations": {
+          "median": 0.0004105,
+          "average": 0.000410500
+        },
+        "durations": [
+          {
+            "duration": 0.0004105,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "fill in the information with cpf already registered , , , 00000, teste@gmail.com, , 27",
+        "aggregatedDurations": {
+          "median": 0.0005233,
+          "average": 0.000523300
+        },
+        "durations": [
+          {
+            "duration": 0.0005233,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "fill in the information with cpf already registered , , , , , Bianca Jaqueline, 27",
+        "aggregatedDurations": {
+          "median": 0.0002971,
+          "average": 0.000297100
+        },
+        "durations": [
+          {
+            "duration": 0.0002971,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "fill in the information with cpf already registered Leonardo Molinari, Testes de software, , , teste@gmail.com, Bianca Jaqueline, 1",
+        "aggregatedDurations": {
+          "median": 0.0003897,
+          "average": 0.000389700
+        },
+        "durations": [
+          {
+            "duration": 0.0003897,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "that I do a (.*) search for students (.*)",
+    "steps": [
+      {
+        "name": "that I do a http://localhost:8080 search for students 09705066619",
+        "aggregatedDurations": {
+          "median": 0.0399618,
+          "average": 0.039961800
+        },
+        "durations": [
+          {
+            "duration": 0.0399618,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "that I do a http://localhost:8080 search for students 09705066611",
+        "aggregatedDurations": {
+          "median": 0.014149,
+          "average": 0.014149000
+        },
+        "durations": [
+          {
+            "duration": 0.014149,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "that I do a http://localhost:8080 search for students xxxxxxxxxxx",
+        "aggregatedDurations": {
+          "median": 0.0118033,
+          "average": 0.011803300
+        },
+        "durations": [
+          {
+            "duration": 0.0118033,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I Update student (.*)",
+    "steps": [
+      {
+        "name": "I Update student http://localhost:8080",
+        "aggregatedDurations": {
+          "median": 0.0007876,
+          "average": 0.000787600
+        },
+        "durations": [
+          {
+            "duration": 0.0007876,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I fill in Update information (.*), (.*)",
+    "steps": [
+      {
+        "name": "I fill in Update information teste@gmail.com, Bianca Jaqueline",
+        "aggregatedDurations": {
+          "median": 0.0004854,
+          "average": 0.000485400
+        },
+        "durations": [
+          {
+            "duration": 0.0004854,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I\u0027ll send the request Update (.*)",
+    "steps": [
+      {
+        "name": "I\u0027ll send the request Update 09705066618",
+        "aggregatedDurations": {
+          "median": 0.018183,
+          "average": 0.018183000
+        },
+        "durations": [
+          {
+            "duration": 0.018183,
+            "location": "file:src/test/resources/cucumber/bookLibrary.feature:46"
+          }
+        ]
+      }
+    ]
+  }
+]
